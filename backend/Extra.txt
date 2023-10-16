@@ -1,0 +1,54 @@
+Site:
+https://stackoverflow.com/questions/71747581/apollo-client-usequery-always-return-loading-as-true
+https://www.stackhawk.com/blog/django-cors-guide/
+https://docs.graphene-python.org/projects/django/en/latest/installation/#
+https://docs.djangoproject.com/en/3.0/ref/csrf/#ajax
+https://www.apollographql.com/docs/apollo-server/security/authentication/
+https://medium.com/nerd-for-tech/nodejs-graphql-authentication-with-jwt-apollo-server-mysql-and-sequelize-orm-21cf1503f7f
+https://docs.amplify.aws/guides/api-graphql/image-and-file-uploads/q/platform/js/#how-it-all-works
+
+CORS ISSUE:
+
+install cors-django
+
+//Django also has a ALLOWED_HOST built in settings.py
+ADD LOCAL HOST AND GRAPHQL HOST(ONLY IP)
+
+ADD corsheader to INSTALLED_APP
+
+ADD corsheader.middlewear to MIDDLEWEAR(AT THE TOP) AND djang0.middle.common at bottom.
+
+ADD CORS_ALLOWED_ORIGINS (Local_host only)
+
+WRAP URLS.py graphql path with csrf_exempt.(IMPORT csrf_Exempt from django.views.decorators.csrf)
+
+ERROR CHECK:
+
+Installed material UI in worng folder(Check ./frontend/my-app/ not frontend)
+
+Deleted second React app but not sure about node_modules. Check if error
+
+url to graphql = localhost8000 but not /graphql.(Need changes?)
+
+
+IDEAS AVI:
+
+CHECK TO CHANGE CATS API BETWEEN POSTS
+
+INCLUDE BOOTSTRAP COMPONENTS
+
+CHANGE DATE FORMAT
+
+PHONE COMPATABILITY LACKING
+
+UPDATE USER(Email? Try console email?)
+
+ALLOW USER TO ADD IMAGE?(Try Amazon S3 storage system)
+
+ADD FRIENDS?(DIARY ENTRIES NOT AVALABLE?)
+
+
+
+
+
+ADD loopable playlist
